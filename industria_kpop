@@ -1,0 +1,174 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "industria_kpop",
+    "dateExported": "2023-10-30T23:33:03.910Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "ce5ce08f-5566-4d5f-9cf9-56e9bb07c241",
+            "name": "grupos",
+            "containerId": "",
+            "created": "2023-10-30T19:16:26.577Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f1e38769-14fb-4a55-9616-cea0d69ee821",
+            "name": "empresas",
+            "containerId": "",
+            "created": "2023-10-30T19:16:26.578Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "d025ec7d-58b7-449a-984c-d9d955bfc39a",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "ce5ce08f-5566-4d5f-9cf9-56e9bb07c241",
+            "name": "consultar grupos",
+            "url": "http://127.0.0.1:5000/grupos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-30T19:16:26.577Z",
+            "modified": "2023-10-30T22:12:56.649Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fd58de63-2b3c-41bb-8ee3-25a1a54a2f0e",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "ce5ce08f-5566-4d5f-9cf9-56e9bb07c241",
+            "name": "insertar un grupo",
+            "url": "http://127.0.0.1:5000/grupos",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-10-30T19:16:26.579Z",
+            "modified": "2023-10-30T23:23:26.049Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n\"nombre_grupo\": \"G-Friend\",\n\"nombre_primer_miembro\": \"eunha\",\n\"nombre_segundo_miembro\": \"yuju\",\n\"nombre_tercer_miembro\": \"sin b\",\n\"nombre_cuarto_miembro\": \"yerin\",\n\"nombre_quinto_miembro\": \"umji\",\n\"nombre_sexto_miembro\": \"kim so-won\",\n\"fecha_debut\": \"2015-01-15\"\n\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7796b6e5-d033-4c2f-991e-2286226289b8",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "ce5ce08f-5566-4d5f-9cf9-56e9bb07c241",
+            "name": "consultar un grupo",
+            "url": "http://127.0.0.1:5000/grupos/65402dbcdb737e3e0b1749bf",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-30T19:16:26.578Z",
+            "modified": "2023-10-30T22:47:47.884Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d8df3eb7-780f-4e4d-9306-0d8c0f8ba14f",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "ce5ce08f-5566-4d5f-9cf9-56e9bb07c241",
+            "name": "editar un grupo",
+            "url": "http://127.0.0.1:5000/grupos/3",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-10-30T19:16:26.580Z",
+            "modified": "2023-10-30T22:13:15.823Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "74239d8f-8eb5-49d0-a223-31640b33b24e",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "ce5ce08f-5566-4d5f-9cf9-56e9bb07c241",
+            "name": "funar a una empresa",
+            "url": "http://127.0.0.1:5000/grupos/3",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-30T19:16:26.581Z",
+            "modified": "2023-10-30T22:13:22.156Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ef350a6b-9554-49f1-b992-64f6faf0ff70",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "f1e38769-14fb-4a55-9616-cea0d69ee821",
+            "name": "consultar empresas",
+            "url": "http://127.0.0.1:5000/empresas",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-30T19:16:26.582Z",
+            "modified": "2023-10-30T23:20:49.028Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "76b01b95-9095-4e2a-9b39-c3a72ba7e62a",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "f1e38769-14fb-4a55-9616-cea0d69ee821",
+            "name": "consultar una empresa",
+            "url": "http://127.0.0.1:5000/empresas/2",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-30T19:16:26.583Z",
+            "modified": "2023-10-30T23:20:58.637Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7de2edd3-1534-49b1-8e24-88d9e8a9f8e0",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "f1e38769-14fb-4a55-9616-cea0d69ee821",
+            "name": "funar una empresa",
+            "url": "http://127.0.0.1:5000/empresas/2",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-10-30T19:16:26.584Z",
+            "modified": "2023-10-30T23:21:03.642Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5a7321c1-6a68-4978-abbc-d9a27e02248a",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "f1e38769-14fb-4a55-9616-cea0d69ee821",
+            "name": "editar una empresa",
+            "url": "http://127.0.0.1:5000/empresas/2",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-10-30T19:16:26.585Z",
+            "modified": "2023-10-30T23:21:06.905Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "047caead-1dee-4d30-ab25-8a4fd7310224",
+            "colId": "0a02db3f-ed39-4370-8891-67acb14e075a",
+            "containerId": "f1e38769-14fb-4a55-9616-cea0d69ee821",
+            "name": "insertar una empresa",
+            "url": "http://127.0.0.1:5000/empresas",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-10-30T19:16:26.586Z",
+            "modified": "2023-10-30T23:21:10.077Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
